@@ -5,7 +5,7 @@ async function loadCounter() {
   counter.innerHTML = "loading...";
   try {
     const res = await fetch(
-      "https://neocities.org/api/info?sitename=typhe"
+      "https://api.cors.lol/?url=neocities.org/api/info?sitename=typhe"
     );
 
     const data = await res.json();
