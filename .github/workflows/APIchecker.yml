@@ -18,8 +18,8 @@ jobs:
         run: curl -s "https://neocities.org/api/info?sitename=typhe" -o data.json
 
       - name: Update views.json
-        run: python3 -c "import json; data=json.load(open('data.json')); json.dump({'info':{'views':data['info']['views']}}, open('views.json','w'))"
-
+        run: python3 -c "import json; data=json.load(open('data.json')); json.dump({'info':{'views':data['info']['views']}}, open('views.json','w'), indent=2)"
+      
       - name: Commit and push
         run: |
           git config --global user.name "github-actions[bot]"
