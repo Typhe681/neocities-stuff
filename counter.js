@@ -2,7 +2,7 @@
 const params = new URLSearchParams(window.location.search);
 const sitename = params.get("user");
 
-const digitPath = "./images/digits/";
+const digitPath = "/";
 const digitsLength = 7; 
 
 async function loadCounter() {
