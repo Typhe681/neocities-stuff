@@ -14,8 +14,8 @@ async function loadCounter() {
 
     digits.forEach(d => {
       const img = document.createElement("img");
-      img.src = `https://typhe681.github.io/neocities-counter/${d}.gif?${Date.now()}`;
-      img.style.width = "calc(100% / 7)";
+      img.src = d + ".gif?" + Date.now();
+      img.style.width = 30px;
       counter.appendChild(img);
     });
 
