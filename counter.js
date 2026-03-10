@@ -5,8 +5,7 @@ async function loadCounter() {
   counter.innerHTML = "loading...";
   try {
     const res = await fetch(
-      "https://weirdscifi.ratiosemper.com/neocities.php?sitename=typhe",
-      { mode: "cors" }
+      "https://neocities.org/api/info?sitename=typhe"
     );
 
     const data = await res.json();
