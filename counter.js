@@ -1,6 +1,6 @@
 // URL ?user=
 const params = new URLSearchParams(window.location.search);
-const sitename = params.get("user") || typhe;
+const sitename = params.get("user") || "typhe";
 const digitsLength = 7; 
 
 async function loadCounter() {
