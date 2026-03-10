@@ -1,12 +1,11 @@
 // URL ?user=
 const params = new URLSearchParams(window.location.search);
-const sitename = params.get("user") || "typhe";
 const digitsLength = 7; 
 
 async function loadCounter() {
   try {
     const res = await fetch(
-      `https://weirdscifi.ratiosemper.com/neocities.php?sitename=${sitename}`
+      `https://weirdscifi.ratiosemper.com/neocities.php?sitename=typhe`
     );
     const data = await res.json();
     const views = data.info.views;
